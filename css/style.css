@@ -1,0 +1,153 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+:root{
+    --bg-color:#d9dad7;
+    --black-color:#000;
+    --danger-color:#ff0000;
+    --warning-color:#c24d2c;
+    --white-color:#ffffff;
+    --header-color:#1e56a0;
+    --link-color:#c24d2c;
+    
+}
+
+body{
+    width: 100vw;
+    font-family: 'Times New Roman', Times, serif;
+   
+
+}
+
+header{
+    display: flex;
+    width: 100vw;
+    height: 80px;
+    background-color: var(--header-color);
+    padding: 50px 10px 50px 50px;
+    justify-content: space-between;  
+    align-items: center;  
+}
+
+header .logo{
+    font-size: xx-large;
+    color: #1a2639;
+}
+
+
+header .navbar{
+    display:flex;
+    margin-left: -20%;
+}
+
+header .navbar li{
+    margin-left: 20%;
+    font-size: large;
+}
+
+header .navbar a{
+    color: var(--white-color);
+}
+
+
+
+header .container-hamburger img{
+    visibility: hidden;
+    height: 30px;
+    width: 30px;
+
+}
+
+header .se-connecter{
+    color: var(--link-color);
+    font-size:medium;
+    padding-top: -30px;
+    
+}
+
+@media screen and (max-width:1000px) {
+
+    header .navbar{
+        margin-left: -12%;
+    }
+
+    header .navbar li{
+        margin-left: 10%;
+        font-size: large;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+
+    header{
+        padding: 50px 5px 50px 5px;
+    }
+
+    header .navbar{
+        margin-left: 0%;
+    }
+
+    header .navbar li{
+        margin-left: 5%;
+        font-size: large;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+
+    header{
+        display: flex;
+        /* height: 350px; */
+        align-items:start;
+       padding-top: 25px;
+       position: relative;
+    }
+
+    header .logo{
+        text-wrap: wrap;
+    }
+
+    header .navbar{
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        top: 110px;
+        left: 50%;
+    }
+
+    header .navbar li{
+        font-size: x-large;
+        margin-top: 20px;
+    }
+
+    header .se-connecter{
+        display: none;
+        position: absolute;
+        padding-top: 10px;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    header .container-hamburger .hamburger{
+        visibility: visible;
+        /* margin-right: 20px; */
+    }
+
+    header .container-hamburger .close-menu{
+        visibility: hidden;
+        margin-right: 50px;
+    }
+    
+}
+
+
